@@ -19,6 +19,10 @@ public enum FabricaEnumeracion {
         this.contador = contador;
     }
 
+    public Contador getContador() {
+        return contador;
+    }
+
     public static String opciones() {
         StringBuilder sb = new StringBuilder();
         for(FabricaEnumeracion tipo: values())
@@ -28,9 +32,5 @@ public enum FabricaEnumeracion {
 
     public static FabricaEnumeracion enteroATipo(int posicion) {
         return values()[posicion];
-    }
-
-    public Contador getContador() {
-        return contador;
     }
 }

@@ -17,7 +17,7 @@ public enum FabricaEnumeracionNoInmutable {
 
     private String descripcion;
     private Class<? extends Cliente> cliente;
-    private Cliente NULL  = new Empresa("No se pudo crear", "");
+    private static final Cliente NULL  = new Empresa("No se pudo crear", "");
 
     private FabricaEnumeracionNoInmutable(String descripcion, Class<? extends Cliente> cliente) {
         this.descripcion = descripcion;
